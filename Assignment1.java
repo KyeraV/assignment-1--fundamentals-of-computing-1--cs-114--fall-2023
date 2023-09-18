@@ -21,4 +21,4 @@ public class Assignment1 {
   }
 }
 
-/Please enter a number in Fahrenheit:
+/Please enter a number in Fahrenheit:/
