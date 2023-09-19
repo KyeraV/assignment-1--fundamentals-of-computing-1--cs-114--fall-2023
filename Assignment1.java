@@ -19,11 +19,17 @@ public class Assignment1 {
     System.out.println("          KKK    KKK               VVV   VVV");
     System.out.println("          KKK       KKK             VVV VVV");
     System.out.println("          KKK         KKK             VVV");
+
+    //Fahrenheit to Celsius/
+    Scanner input = new Scanner(System.in); {
+      System.out.println("please enter a number in Fahrenheit:");
+      Double Fahrenheit = input.nextDouble();
+      Double Celsius = (Fahrenheit - 32.0) * 5.0/9.0; //Conversion equation for Fahrenheit
+      System.out.println("Temperature in Celsius" + Celsius);
+
+      //
+     input.close();
+    }
   }
-    Scanner input = new Scanner(system.in);
-    System.out.println("please enter a number in Fahrenheit:");
-    Double Fahrenheit = scanner.nextDouble();
-    Double Celsius = ((fahrenheit - 32.0) * 5.0)/9.0;
-    System.out.println("Temperature in Celsius:" + Celsius);
 }
 
