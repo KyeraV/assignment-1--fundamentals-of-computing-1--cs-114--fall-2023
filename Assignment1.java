@@ -20,32 +20,22 @@ public class Assignment1 {
     System.out.println("          KKK       KKK             VVV VVV");
     System.out.println("          KKK         KKK             VVV");
 
-    //Fahrenheit to Celsius/
-    Scanner input = new Scanner(System.in); {
-      System.out.println("please enter a number in Fahrenheit:");
-      Double Fahrenheit = input.nextDouble();
-      Double Celsius = (Fahrenheit - 32.0) * 5.0/9.0; //Conversion equation for Fahrenheit
-      System.out.println("Temperature in Celsius" + Celsius);
-      //
-      input.close();
+    //Fahrenheit to Celsius
+    Scanner input = new Scanner(System.in);
+    System.out.println("please enter a number in Fahrenheit:");
+    Double Fahrenheit = input.nextDouble();
+    Double Celsius = (Fahrenheit - 32.0) * 5.0/9.0; //Conversion equation for Fahrenheit
+    System.out.println("Temperature in Celsius" + Celsius);
+    //
+    input.close();
 
-      Scanner scanner = new Scanner(System.in); {
-        System.out.println("Enter a 5-character string:");
-        String inputString = scanner.nextLine();
-        
-        if (inputString.length() == 5) {
-          String reversedString = new StringBuilder(inputString)
-          .reverse()
-          .substring(1, 4); //Remove the first and last characters
-          System.out.println("Result: " + reversedString);
-        } else {
-          //
-          scanner.close();
-        }
-      }
-      
-     
-    }
+    //5-character string
+    System.out.println("Enter a 5-character string:");
+    String abaft = input.next();
+    String newString = new StringBuilder(abaft.substring(1, 4)).reverse(); //Remove the first and last character;
+
+    //Random
+
   }
 }
 
