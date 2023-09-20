@@ -8,6 +8,11 @@ random number between 32 - 16,384. Finally combine the results from steps 2 - 4 
  it to the screen.*/
 public class Assignment1 {
   public static void main(String[] args) {
+    Scanner input;
+    Double Fahrenheit, Celsius;
+    String abaft, newString;
+    Random num;
+    Int min = 32, max = 16384;
 
     System.out.println();
     System.out.println("          KKK         KKK    VVV               VVV");
@@ -21,21 +26,24 @@ public class Assignment1 {
     System.out.println("          KKK         KKK             VVV");
 
     //Fahrenheit to Celsius
-    Scanner input = new Scanner(System.in);
+    input = new Scanner(System.in);
     System.out.println("please enter a number in Fahrenheit:");
-    Double Fahrenheit = input.nextDouble();
-    Double Celsius = (Fahrenheit - 32.0) * 5.0/9.0; //Conversion equation for Fahrenheit
+    Fahrenheit = input.nextDouble();
+    Celsius = (Fahrenheit - 32.0) * 5.0/9.0; //Conversion equation for Fahrenheit
     System.out.println("Temperature in Celsius" + Celsius);
     //
-    input.close();
 
     //5-character string
     System.out.println("Enter a 5-character string:");
-    String abaft = input.next();
-    String newString = new StringBuilder(abaft.substring(1, 4)).reverse(); //Remove the first and last character;
+    abaft = input.next();
+    newString = new StringBuilder(abaft.substring(1, 4)).reverse().toString(); //Remove the first and last character;
 
-    //Random
+    //Random number generator
+    num = new Random();
+    min = 32, max = 16384;
+    System.out.println("Random number (between 32-16384)");
 
+    input.close();
   }
 }
 
