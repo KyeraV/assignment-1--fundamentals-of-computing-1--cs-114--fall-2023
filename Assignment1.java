@@ -11,8 +11,7 @@ public class Assignment1 {
     Scanner input;
     Double Fahrenheit, Celsius;
     String abaft, newString;
-    Random num;
-    Int min = 32, max = 16384;
+    int min = 32, max = 16384;
 
     System.out.println();
     System.out.println("          KKK         KKK    VVV               VVV");
@@ -36,12 +35,12 @@ public class Assignment1 {
     //5-character string
     System.out.println("Enter a 5-character string:");
     abaft = input.next();
-    newString = new StringBuilder(abaft.substring(1, 4)).reverse().toString(); //Remove the first and last character;
+    newString = new StringBuilder(abaft.substring(1, 4)).reverse().toString(); //Remove the first and last character and reverse it;
 
     //Random number generator
-    num = new Random();
-    min = 32, max = 16384;
-    System.out.println("Random number (between 32-16384)");
+    Random num = new Random();
+    System.out.println("Give me a random number between "+min+" to "+max);
+
 
     input.close();
   }
