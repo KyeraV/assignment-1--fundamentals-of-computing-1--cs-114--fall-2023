@@ -41,6 +41,8 @@ public class Assignment1 {
     Random num = new Random();
     System.out.println("Give me a random number between "+min+" to "+max);
 
+    //Combining steps two through four
+    System.out.println(Celsius + newString + (num.nextDouble(max-min + 1) + 32));//
 
     input.close();
   }
